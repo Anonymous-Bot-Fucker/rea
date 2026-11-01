@@ -8,7 +8,12 @@
       content="A small Electron Notes app for the REA JavaScript analysis guide."
     />
     <title>Notes — Electron analysis example</title>
-    <script src="renderer.js" defer></script>
+    <script src="renderer.js" defer></script>  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
   </head>
   <body>
     <h1>Notes</h1>
